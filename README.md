@@ -1,8 +1,1 @@
-# Full Stack To-Do-App
-
-## Technologies Used
-
-- React
-- Node.js / Express
-
-Folder structures follows the Node-Postgres recommended structure and create-react-app structure.
+Docs can be found here: https://docs.bit.io/docs/creating-a-crud-to-do-list
