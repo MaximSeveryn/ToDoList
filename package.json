@@ -1,31 +1,33 @@
 {
   "name": "todo-api",
   "version": "1.0.0",
-  "description": "REST API designed in Node.js for a TODO application",
-  "main": "server.js",
+  "description": "A Todo API",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/server.js",
+    "test": "mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec \"npm test\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/toslimarif/todo-api.git"
+  "engines": {
+    "node": "8.10.0"
   },
-  "keywords": [
-    "TODO",
-    "REST",
-    "API"
-  ],
-  "author": "Toslim Arif",
+  "author": "Suyash Purwar",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/toslimarif/todo-api/issues"
-  },
-  "homepage": "https://github.com/toslimarif/todo-api#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "moment-timezone": "^0.5.26",
-    "mongoose": "^5.6.8"
+    "body-parser": "^1.18.2",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.2.0",
+    "lodash": "^4.17.4",
+    "mongodb": "^2.2.19",
+    "mongoose": "^5.0.3",
+    "validator": "^9.4.1",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^5.0.1",
+    "nodemon": "^1.15.0",
+    "supertest": "^3.0.0"
   }
 }
